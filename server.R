@@ -23,7 +23,7 @@ shinyServer(function(input, output) {
     }
     expr$id <- rownames(expr)
     m1 <- melt(expr, id.vars = "id", value.name="tpm")
-    p <- plot_ly(m1, x = variable, y = tpm, color = id, type = "bar", colors = "Spectral")
+    p <- plot_ly(m1, x = "variable", y = "tpm", color = "id", type = "bar", colors = "Spectral")
     layout(p, title = goi, margin = list(b = 160), xaxis = list(title = "Tissue", tickangle = 45)) #should be list() to work!
     })
   
