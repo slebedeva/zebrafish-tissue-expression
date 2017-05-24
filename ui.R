@@ -10,7 +10,7 @@ shinyUI(fluidPage(
         p(" - Ensembl RNA-Seq ", a("Collins 2012", href=""), "(ERR00427-29, 3 ovary samples, paired end, 2x36,not stranded),"),
         p(" - ", a("Kelkar 2014", href="http://www.ncbi.nlm.nih.gov/pubmed/25060758"), " (SRR15625.., paired end, 2x76, not stranded),"),
         p("- ", a("PhyloFish", href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-2709-z"), "(SRR15242.., paired end, 2x100, not stranded),"),
-        p(" - Svetlana's RNA-Seq, WT brain (fus project, 4 replicates, paired end, 2x100, stranded)"),
+        p(" - ", a("Lebedeva 2017", href="https://doi.org/10.1080/15476286.2016.1256532"), "(GSE85554, paired end 2x100, stranded)"),
         br(),
         div("Note of caution:", style = "color:red"),
         p("Transcript abundance estimates are not normalized and cannot directly be compared across tissues."),
