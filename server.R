@@ -4,7 +4,7 @@ source("Global.R")
 
 #load data once:
 
-m <- read.table(file = "data/kallisto_tpm_expression_table.txt")
+m <- read.table(file = "kallisto_tpm_expression_table.txt")
 
 shinyServer(function(input, output) {
   
