@@ -10,6 +10,8 @@ I used [STAR](https://github.com/alexdobin/STAR) to map the publicly available R
 
 Go to https://slebedeva.shinyapps.io/zebrafish-tissue-expression/ 
 
+Deployment script is courtesy of Roel M. Hogervorst (https://www.r-bloggers.com/2021/02/deploy-to-shinyapps-io-from-github-actions/)
+
 ## If you have Rstudio installed locally:
 
 Open Rstudio and type:
