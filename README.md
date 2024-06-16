@@ -6,15 +6,9 @@ I used [STAR](https://github.com/alexdobin/STAR) to map the publicly available R
 
 ### Usage:
 
-## Using Docker container locally:
+## Using interactive app:
 
-```
-# Build an image:
-make build
-# Run the server:
-make run
-```
-The app should be accessible in your browser at `localhost:3838`
+Go to https://slebedeva.shinyapps.io/zebrafish-tissue-expression/ 
 
 ## If you have Rstudio installed locally:
 
