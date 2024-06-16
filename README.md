@@ -5,7 +5,14 @@ In which tissue my favorite gene is expressed?
 I used [STAR](https://github.com/alexdobin/STAR) to map the publicly available RNA-Seq data and [Kallisto](https://github.com/pachterlab/kallisto) to quantify expression.
 
 ### Usage:
-Open rstudio and type:
+
+## Using interactive app:
+
+Go to https://slebedeva.shinyapps.io/zebrafish-tissue-expression/ 
+
+## If you have Rstudio installed locally:
+
+Open Rstudio and type:
 ```{r}
 library("shiny")
 runGitHub("public_rnaseq_tpm","slebedeva")
@@ -16,4 +23,5 @@ Mouse over the bar to see the sample and the TPM. The plot is showing total expr
 You can also download the counts as a table.
 
 ![](Screenshot.png)
+
 
