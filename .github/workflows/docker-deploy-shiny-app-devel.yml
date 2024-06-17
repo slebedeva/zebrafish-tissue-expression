@@ -1,0 +1,25 @@
+name: Docker Deploy Shiny App Devel
+
+on:
+  push:
+    branches: [ "devel" ]
+
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag devel
+    - name: execute
+      run: |
+        docker run
+        -e SHINY_ACC_NAME=${{ secrets.ACCOUNT_NAME }} \
+        -e TOKEN=${{secrets.TOKEN}} \
+        -e SECRET=${{secrets.SECRET}} \
+        -e MASTERNAME=${{secrets.TEST_NAME}} \
+        devel
